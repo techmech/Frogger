@@ -5,12 +5,13 @@
 [ext_resource type="PackedScene" uid="uid://dghd7rii024ea" path="res://scenes/player.tscn" id="2_lnu2h"]
 
 [node name="Game" type="Node2D"]
+metadata/_edit_horizontal_guides_ = [-320.0, 319.0]
+metadata/_edit_vertical_guides_ = [-193.0, 191.0]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_yqjtg")
 
 [node name="Player" parent="." instance=ExtResource("2_lnu2h")]
-position = Vector2(-47, 17)
 
 [node name="ExerciseObject" parent="." instance=ExtResource("2_lbhrr")]
 position = Vector2(68, 210)
