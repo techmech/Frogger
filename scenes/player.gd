@@ -8,12 +8,8 @@ func _physics_process(_delta: float) -> void:
 	velocity = direction * speed
 	animation()
 	move_and_slide()
-	
-	if Input.is_action_just_pressed("confirm"):
-		print('something')
 
 func animation():
-	print(direction)
 	if direction:
 		$AnimatedSprite2D.flip_h = direction.x > 0
 		if direction.x != 0:
